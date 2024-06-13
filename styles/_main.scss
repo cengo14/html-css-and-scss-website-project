@@ -1,0 +1,42 @@
+section{
+    padding: 70px 17% 60px;
+}
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(./../img/group.jpeg);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &-text{
+        h5{
+            font-size: 18px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: $mainColor;
+            font-weight: 600;
+        }
+        h1{
+            margin: 20px 0;
+            font-size: $h1Font;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        p{
+            font-size: $pFont;
+            line-height: 30px;
+            color: #ffffffab;
+            margin: 35px 0;
+        }
+
+    }
+}
+

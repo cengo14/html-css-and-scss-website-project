@@ -1,0 +1,49 @@
+.center-text {
+  text-align: center;
+  h2 {
+    font-size: $h2Font;
+    font-weight: 800;
+  }
+}
+.top-courses-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+  .box {
+    position: relative;
+    margin: 20px a;
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      filter: brightness(70%);
+      border-radius: 10px;
+      transition: all 0.5s ease;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    .courses-title {
+      position: absolute;
+      bottom: 25px;
+      left: 25px;
+      i {
+        color: $mainColor;
+        margin-right: 5px;
+      }
+      h3 {
+        margin-bottom: 7px;
+      }
+      h4 {
+        margin-bottom: 7px;
+      }
+    }
+  }
+}
+.center-btn {
+  text-align: center;
+  margin-top: 50px;
+}
